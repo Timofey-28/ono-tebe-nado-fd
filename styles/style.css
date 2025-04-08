@@ -453,6 +453,7 @@
   }
   
   .footer__social-icon_pinterest {
+    position: relative;
     background-image: url(../images/pinterest.svg);
     width: 48px;
     height: 48px;
