@@ -30,14 +30,17 @@
     list-style: circle;
     text-underline-offset: 4px;
   }
-  
-  .header_links_list_item_no_bullit {
+
+  .header_links_list_item_no_bullet {
+    list-style: none;
     font-family: Raleway, Arial, sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 100%;
-    list-style: none;
-    position: relative;
+    text-underline-offset: 4px;
+  }
+
+  .header_links_list_item_active {
     padding-left: 4px;
     text-decoration: none;
   }
@@ -50,7 +53,6 @@
   }
   
   .header_logo_image {
-    position: absolute;
     background-image: url(../images/logo-black.svg);
     background-size: cover;
     width: 129px;
@@ -188,6 +190,7 @@
   .lots_card_list {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     gap: 25px;
     justify-content: center;
     position: relative;
@@ -221,7 +224,6 @@
   }
   .card_type_film {
     background-image: url(../images/card-lot-01.jpg);
-    background-position: center center;
   }
   
   .card_type_book {
@@ -313,13 +315,6 @@
     display: flex;
   }
   
-  .about_column_down {
-    position: relative;
-    display: block;
-    padding-top: 140px;
-    margin-left: 26px;
-  }
-  
   .about_title {
     position: relative;
     width: 330px;
@@ -328,8 +323,16 @@
     font-size: 40px;
     line-height: 100%;
     text-transform: uppercase;
+    padding-top: 140px;
   }
-  
+
+  .about_text_right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap:23px;
+  }
+
   .about_text {
     padding-top: 104px;
     font-family: Raleway, Arial, sans-serif;
@@ -340,8 +343,14 @@
     text-transform: none;
   }
 
+  .about_column_down {
+    position: relative;
+    display: block;
+    margin-left: 26px;
+  }
+
   .about_text_down {
-    padding-top: 23px;
+    padding-top: 0px;
   }
   
   .footer {
@@ -391,6 +400,10 @@
   
   .footer_menu_link_active {
     text-decoration: none;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-underline-offset: 3px;
   }
   
   .footer_social_list {
